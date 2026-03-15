@@ -516,9 +516,12 @@
 
   /* ── RESPONSIVE ── */
   @media (max-width: 900px) {
-    #topnav .brand { display: none !important; }
-    #topnav .nav-row { padding: 0 16px; }
-    #topnav .tools-row { padding: 0 16px 8px; flex-wrap: wrap; justify-content: flex-start; gap: 5px; }
+    .desktop-only { display: none !important; }
+    #topnav .nav-row { padding: 0 8px; justify-content: center; }
+    #topnav nav { flex-wrap: wrap; justify-content: center; gap: 3px; }
+    #topnav nav a { font-size: 10px; padding: 5px 8px; }
+    #topnav .tools-row { padding: 0 8px 8px; flex-wrap: wrap; justify-content: center; gap: 4px; }
+    #topnav .tools-row a { font-size: 10px; padding: 4px 9px; }
     .brief-grid, .approach-grid, .tools-grid, .process-grid, .ps-grid { grid-template-columns: 1fr; }
     .video-layout { grid-template-columns: 1fr; }
     .video-player-wrap { position: static; }
@@ -569,7 +572,7 @@
 <!-- ── STICKY TOP NAV ── -->
 <header id="topnav">
   <div class="nav-row">
-    <div class="brand">Mrs. <span>Quilty</span> — AI Media Creator</div>
+    <div class="brand desktop-only">Mrs. <span>Quilty</span> — AI Media Creator</div>
     <nav>
       <a href="#brief">Task</a>
       <a href="#tools">Tools</a>
